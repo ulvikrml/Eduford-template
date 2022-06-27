@@ -1,87 +1,8 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.title {
-    text-align: center;
-}
-
-.title p {
-    color: #747274;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-}
-
 /*       HEADER      */
 
-.header {
-    width: 100%;
+.header{
     height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(eduford_img/banner.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-nav {
-    padding: 25px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-nav .logo {
-    width: 175px;
-    margin-top: 13px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li:not(:last-child) {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: #f44336;
-    display: block;
-    margin: auto;
-    transition: all ease-in-out 0.3s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-.header_container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../eduford_img/banner.png);
 }
 
 .header_container h1 {
@@ -111,92 +32,6 @@ nav ul li a:hover::after {
     background-color: rgba(244, 67, 54, 1);
     border: 1px solid rgba(168, 166, 163, 0.7);
 }
-
-nav .fa-bars {
-    color: white;
-    font-size: 22px;
-    margin-top: -5px;
-    display: none;
-    cursor: pointer;
-}
-
-.menu .fa-times {
-    display: none;
-    cursor: pointer;
-}
-
-
-@media screen and (max-width: 572px) {
-    .header .header_container h1 {
-        font-size: 30px;
-    }
-
-    nav .logo {
-        width: 140px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .header_container {
-        width: 75%;
-    }
-
-    .menu {
-        background: #f44336;
-        position: absolute;
-        right: -200px;
-        top: 0;
-        height: 100vh;
-        width: 200px;
-        z-index: 2;
-        padding-top: 30px;
-        transition: all 0.5s ease-in-out;
-        position: fixed;
-    }
-
-    .menu ul li {
-        display: block;
-        padding: 8px 0px 0px 12px;
-    }
-
-    .close {
-        display: block;
-        color: white;
-        font-size: 22px;
-        margin: 12px 10px;
-    }
-
-    .menu .fa-times {
-        display: inline-block;
-        color: white;
-        font-size: 22px;
-        margin: 12px 10px;
-    }
-
-    nav .fa-bars {
-        display: block;
-    }
-}
-
-/*    SCROLLBAR    */
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(136, 136, 136, .8);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(136, 136, 136, 1);
-}
-
-
 
 /*       COURSE       */
 
@@ -444,7 +279,7 @@ nav .fa-bars {
 .contact_card {
     width: 100%;
     height: 300px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(eduford_img/banner2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../eduford_img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -477,38 +312,5 @@ nav .fa-bars {
     .card_btn {
         font-size: 12px;
         padding: 8px 17px;
-    }
-}
-
-
-
-/*       ABOUT      */
-
-.about {
-    margin-top: 120px;
-    text-align: center;
-}
-
-.about .container {
-    width: 50%;
-}
-
-.about .container p {
-    padding: 20px 0px;
-    color: #747274;
-    font-size: 13px;
-}
-
-.about i {
-    color: #f44336;
-}
-
-.about .links i {
-    margin-right: 12px;
-}
-
-@media screen and (max-width: 572px) {
-    .about .container {
-        width: 75%;
     }
 }

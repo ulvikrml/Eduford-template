@@ -1,0 +1,195 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p {
+    color: #747274;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    padding: 25px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav .logo {
+    width: 175px;
+    margin-top: 13px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: all ease-in-out 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+nav .fa-bars {
+    color: white;
+    font-size: 22px;
+    margin-top: -5px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu .fa-times {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 572px) {
+    .header .header_container h1 {
+        font-size: 30px;
+    }
+
+    nav .logo {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_container {
+        width: 75%;
+    }
+
+    .menu {
+        background: #f44336;
+        position: absolute;
+        right: -200px;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        z-index: 2;
+        padding-top: 30px;
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 8px 0px 0px 12px;
+    }
+
+    .close {
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin: 12px 10px;
+    }
+
+    .menu .fa-times {
+        display: inline-block;
+        color: white;
+        font-size: 22px;
+        margin: 12px 10px;
+    }
+
+    nav .fa-bars {
+        display: block;
+    }
+}
+
+/*    SCROLLBAR    */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136, .8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 136, 136, 1);
+}
+
+/*       FOOTER      */
+
+.footer {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.footer .container {
+    width: 50%;
+}
+
+.footer .container p {
+    padding: 20px 0px;
+    color: #747274;
+    font-size: 13px;
+}
+
+.footer i {
+    color: #f44336;
+}
+
+.footer .links i {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 572px) {
+    .footer .container {
+        width: 75%;
+    }
+}
