@@ -193,3 +193,21 @@ nav .fa-bars {
         width: 75%;
     }
 }
+
+.main-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 12px 30px;
+    transition: 0.4s ease;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.main-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: white;
+}
