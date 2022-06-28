@@ -1,0 +1,89 @@
+/*     HEADER     */
+
+.header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../eduford_img/background.jpg);
+    height: 60vh;
+}
+
+.header_container h1 {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1.2px;
+}
+
+/*    COURSES     */
+
+.courses{
+    padding: 120px 0px 80px;
+}
+.courses-title h2{
+    font-size: 37px;
+    color: rgba(4, 9, 30, 0.9);
+}
+.courses-title p{
+    font-size: 22px;
+    width: 70%;
+    color: rgba(4, 9, 30, 0.7);
+    padding: 20px 0px 30px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    flex-basis: 32%;
+    display: flex;
+    margin-bottom: 45px;
+}
+.card .col-right{
+    width: 100%;
+    padding-left: 25px;
+}
+.card p{
+    font-size: 18px;
+    color: rgba(4, 9, 30, 0.7);
+}
+.card h3{
+    margin-bottom: 10px;
+}
+.card img{
+    width: 60px;
+}
+
+@media screen and (max-width:992px) {
+    .card{
+        flex-basis: 47%;
+    }
+    .card img{
+        width: 50px;
+    }
+    .courses-title h2{
+        font-size: 34px;
+    }
+    .courses-title p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card img{
+        width: 40px;
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .courses-title h2{
+        font-size: 28px;
+    }
+    .courses-title p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 594px) {
+    .card{
+        flex-basis: 100%;
+    }
+    .courses-title p{
+        padding: 13px 0px 23px;
+    }
+}
