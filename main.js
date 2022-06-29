@@ -5,9 +5,7 @@ let body = document.querySelector("body");
 let loader = document.querySelector('.preloader');
 
 window.addEventListener('load',()=>{
-    setTimeout(function() {
-        loader.style.display='none';
-      }, 1000);
+    loader.style.display='none';
 })
 openBtn.addEventListener("click", ()=>{
     menu.style.right = "0px";
